@@ -1,0 +1,178 @@
+<html>
+
+
+<head>
+    <title>INCOME TAX</title>
+
+    <script>
+        function hx() {
+            let k = document.getElementById('income').value;
+            let l = document.getElementById('profit').value;
+
+            var val = parseInt(k) + parseInt(l);
+            document.getElementById('taxable').innerHTML = val;
+            if (val <= 500000) {
+
+                document.getElementById('percentage').innerHTML = 'no tax';
+
+                document.getElementById('cess').innerHTML = 'no cess';
+
+                document.getElementById('tax').innerHTML = 'no tax';
+
+            } else if (val >= 500000 && val <= 1000000) {
+
+                document.getElementById('percentage').innerHTML = (val * 10) / 100;
+
+                document.getElementById('cess').innerHTML = (((val * 10) / 100) * 4) / 100;
+                document.getElementById('tax').innerHTML = parseInt(((((val * 10) / 100) * 4) / 100)) + parseInt(((val * 10)) / 100);
+
+
+
+            } else if (val >= 1000000 && val <= 1500000) {
+
+                document.getElementById('percentage').innerHTML = (val * 15) / 100;
+
+                document.getElementById('cess').innerHTML = (((val * 15) / 100) * 4) / 100;
+                document.getElementById('tax').innerHTML = parseInt(((((val * 15) / 100) * 4) / 100)) + parseInt(((val * 15)) / 100);
+
+
+
+
+
+            } else
+            if (val >= 1500001 && val <= 2000000) {
+
+                document.getElementById('percentage').innerHTML = (val * 20) / 100;
+
+                document.getElementById('cess').innerHTML = (((val * 20) / 100) * 4) / 100;
+                document.getElementById('tax').innerHTML = parseInt(((((val * 20) / 100) * 4) / 100)) + parseInt(((val * 20)) / 100);
+
+
+
+
+
+            } else if (val >= 2000001 && val <= 3000000) {
+
+                document.getElementById('percentage').innerHTML = (val * 30) / 100;
+
+                document.getElementById('cess').innerHTML = (((val * 30) / 100) * 4) / 100;
+
+
+                document.getElementById('tax').innerHTML = parseInt(((((val * 30) / 100) * 4) / 100)) + parseInt(((val * 30)) / 100);
+
+
+            } else {
+                document.getElementById('percentage').innerHTML = (val * 35) / 100;
+
+                document.getElementById('cess').innerHTML = (((val * 35) / 100) * 4) / 100;
+
+
+                document.getElementById('tax').innerHTML = parseInt(((((val * 35) / 100) * 4) / 100)) + parseInt(((val * 30)) / 100);
+            };
+
+
+
+
+
+        }
+    </script>
+    <style>
+        .formss {
+            text-align: center;
+            color: rgb(219, 247, 235);
+            background-image: linear-gradient(to right, rgb(77, 106, 235), rgb(75, 64, 64));
+            margin: 3px;
+            padding: 8px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 140%;
+        }
+        
+        .heading {
+            color: rgb(22, 226, 138);
+            padding: 3px;
+        }
+        
+        .calculation {
+            text-align: center;
+            background-color: rgb(176, 243, 221);
+            padding: 7px;
+            margin: 8px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 110%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="formss">
+
+        <h1 class="heading">INCOME TAX CALCULATOR</h1>
+        <form action="GET">
+            <label for="assesment"> Assesment Year : </label>
+            <select name="assesment" id="assesment">
+            <option value="2024-25">2024-25</option>
+            <option value="2023-24">2023-24</option>
+            <option value="2022-23">2022-23</option>
+            <option value="2021-22">2021-22</option>
+            <option value="2020-21">2020-21</option>
+            <option value="2019-20">2019-20</option>
+        </select><br><br>
+
+
+            <label for="tax_payer">Tax Payer : </label>
+            <select name="tax_payer" id="tax_payer">
+            <option value="individual">individual</option>
+            <option value="domestic company">domestic comapany</option>
+            <option value="foreign company">foreign company</option>
+            <option value="firms">firms</option>
+            <option value="LLP">LLP</option>
+            <option value="HUF">HUF</option>
+        </select><br><br>
+
+            <label for="category">Category : </label>
+            <select name="category" id="category">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="senior citizen">Senior citizen</option>
+        </select><br><br>
+
+
+            <label for="residential">Residential Status : </label>
+            <select name="residential" id="residential">
+            <option value="resident">Resident</option>
+            <option value="non resident">Non-Resident</option>
+        </select><br><br>
+
+            <label for="income">Income from Salary : </label>
+            <input type="number" id="income" name="income">
+            <br><br>
+
+            <label for="profit">Other profits : </label>
+            <input type="number" name="profit" id="profit">
+            <br><br>
+
+            <input type="button" onclick="hx()" value="Calculate">
+        </form>
+    </div>
+    <br><br>
+    <hr><br>
+    <div class="calculation">
+        <p>Taxable Income.. <br>
+            <span id="taxable">....</span></p><br>
+        <p>Income Liable to Tax at Normal Rate <br>
+            <span id="percentage">....</span></p>
+
+
+        <p>Health and Education Cess @ 4%<br>
+            <span id="cess">....</span></p><br>
+        <p>Total Tax Liability <br>
+            <span id="tax">....</span></p>
+
+    </div>
+
+
+</body>
+
+</html>
+
+</html>

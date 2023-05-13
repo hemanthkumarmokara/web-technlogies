@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE MEDICAL CARE</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <form>
+                <div class="step step-1 active">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input autocomplete="off" type="text" id="firstName" name="first-name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input autocomplete="off" type="text" id="lastName" name="last-name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="number" id="phone" name="phone-number" />
+                    </div>
+
+                    <button type="button" class="next-btn">Next</button>
+                </div>
+                <div class="step step-2">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input autocomplete="off" type="text" id="email" name="email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+
+                    <button type="button" class="previous-btn">Prev</button>
+
+                    <button type="submit" class="submit-btn" onclick="window.open('home.html')">Submit</button>
+
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <script src="register.js"></script>
+</body>
+
+</html>

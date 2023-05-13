@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Students</title>
+
+
+    <style>
+        .navv {
+            background-image: linear-gradient(to right, rgb(77, 106, 235), rgb(75, 64, 64));
+            padding: 25px;
+            border: 2px;
+            border-color: brown;
+            border-radius: 8px;
+        }
+        
+        .lol {
+            color: brown;
+            text-align: center;
+            margin: 1px 1px 1px 60px;
+            padding: 15px;
+            border: 11px;
+            border-radius: 11px;
+            background-color: rgb(220, 239, 245);
+            text-transform: capitalize;
+            text-decoration-line: none;
+        }
+        
+        o .university {
+            margin: 0px, 100px, 0px, 0px;
+            font-size: 220%;
+            color: rgb(244, 248, 14);
+        }
+        
+        .navv .lol:hover {
+            background-color: rgb(215, 215, 250);
+            color: black;
+        }
+        
+        body {
+            background-color: rgb(220, 239, 245);
+        }
+        
+        .all-browsers {
+            margin: 10px;
+            padding: 5px;
+            background-color: rgb(235, 199, 165);
+        }
+        
+        .all-browsers>h1,
+        .browser {
+            margin: 10px;
+            padding: 5px;
+        }
+        
+        .browser {
+            background: rgb(236, 241, 243);
+        }
+        
+        .browser>h2,
+        p {
+            margin: 4px;
+            font-size: 100%;
+        }
+        
+        imgg {
+            text-align: center;
+        }
+        
+        .formss {
+            text-align: center;
+        }
+        
+        .social {
+            display: inline-block;
+            margin: 0 8px
+        }
+        
+        .icons {
+            text-align: center;
+            padding: 5px;
+        }
+        
+        .mainn {
+            background-image: linear-gradient(to right, rgb(77, 106, 235), rgb(75, 64, 64));
+            padding: 3px;
+            border: 4px;
+            border-radius: 9px;
+        }
+        
+        .copyright {
+            color: azure;
+            text-align: center;
+        }
+        
+        .copyright a {
+            color: azure;
+            text-align: center;
+        }
+    </style>
+
+    <script src="student.js"></script>
+</head>
+
+<body onload='document.form1.text1.focus()'>
+    <header>
+        <nav class="navv">
+            <a class="university">University web page</a>
+
+            <a href="home.html" class="lol" target="_blank">Home</a>
+            <a href="department.html" class="lol" target="_blank">Departments</a>
+            <a href="student.html" class="lol" target="_blank">Students</a>
+            <a href="Facilities.html" class="lol" target="_blank">Facilities</a>
+            <a href="contact.html" class="lol" target="_blank">Contact</a>
+
+        </nav>
+    </header><br><br><br><br>
+
+    <h1>Students</h1>
+    <h3>Welcome to the student page! Here you will find information about our current students, academic programs, and student life.
+    </h3><br>
+    <img src="D:\web technologies\Icons&images\vitap students.jpg" alt="err" class="imgg">
+    <br><br>
+
+    <article class="all-browsers">
+        <h1>Activities</h1>
+        <article class=" browser ">
+            <h2>Clubs&Chapters</h2>
+            <p>At VIT-AP, we believe in fostering an enriching environment where you are enabled to explore your creative selves and take pride in the work you do. VIT-AP features an array of clubs and chapters which offer you a life beyond academics.Our
+                clubs and chapters provide a recreational space to explore creativity, make new friendships, engage in collaborative work, relax, and socialise. Various club activities eventually lead you to develop a crucial skillset comprising team-work,
+                leadership, and event management. At present, there are more than 70 clubs in the university which include.</p>
+        </article>
+        <article class="browser ">
+            <h2>Celebrations</h2>
+            <p>Apart from academics, students are involved in a culture of experiencing life through various events on campus. They get to participate in popular weekly student community programmes, be a part of the music band or the dance troupe, or any
+                other that interests them. Moreover, every year the institute has a mega cultural and technical event that includes popular celebrities and accomplished people from various fields wherein students are also provided a platform to showcase
+                and develop their skills and talents.</p>
+        </article>
+        <article class="browser ">
+            <h2>Sports</h2>
+            <p>At VIT-AP, we believe that sound mental and good physical health are crucial for holistic development. With a strong emphasis on recreation of students, VIT-AP students, faculty and staff are provided facilities which keeps them active, spirited,
+                involved, and healthy. Several intramural sports events are organised where students compete in cricket, badminton, volleyball, chess etc. Apart from intramural sports, different colleges and universities also participate in our in-house
+                Sports and Cultural fest VITopia.</p>
+        </article>
+    </article><br><br><br>
+    <h2>Check out to get more about our academic programs.</h2><br>
+    <div class="formss">
+        <form onsubmit="return validateForm()">
+            <label for="noun ">Enter Your Name : </label>
+            <input type="text " name="noun " id="noun " placeholder="your name "><br><br>
+
+            <label for="email ">Enter your Email : </label>
+            <input type='email' name='email' id="email" placeholder="your email" /> ;<br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="password"><br><br>
+
+
+            <label for="phone">Enter your mobile number : </label>
+            <input type="text " name="phone" id="phone" placeholder="valid mobile number "> <br><br>
+
+            <label for="native ">Nationality</label>
+            <select name="native " id="native ">
+            <option value="Indian ">Indian</option>
+            <option value="Foreigner ">Foriegner</option>
+        </select><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        <p id="demo"></p>
+    </div><br><br> <br><br>
+    <footer>
+        <div class="mainn">
+            <div class="copyright">
+                <p>&copy; 2023 VIT-AP University</p><br>
+            </div>
+            <div class="icons">
+                <div class="social">
+                    <a href="https://www.facebook.com/vitap.university/"><img src="https://img.icons8.com/doodle/1x/facebook-new.png" alt="err"></a>
+                </div>
+                <div class="social">
+                    <a href="https://www.instagram.com/vitap.university/"><img src="https://img.icons8.com/color/1x/instagram-new.png" alt="err"></a>
+                </div>
+                <div class="social">
+
+                    <a href="https://twitter.com/VITAPuniversity"><img src="https://img.icons8.com/color/1x/twitter.png" alt="err"></a>
+                </div>
+                <div class="social">
+                    <a href="mailto:info@vitap.ac.in"><img src="https://img.icons8.com/office/1x/mail-contact.png" alt="err"></a><br>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script>
+    </script>
+</body>
+
+</html>

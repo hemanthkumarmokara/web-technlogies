@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <script>
+        function validate1() {
+
+            let uname = document.getElementById("rr")
+            let pword = document.getElementById("mm")
+
+            if (uname.value == "" || pword.value == "") {
+                windows.alert("no blank is allowed")
+            } else {
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form onsubmit="validate1()" action="practice1.html">
+        <input type="text" id="rr" name="rt" placeholder="username" />
+        <br><br>
+        <input type="password" id="mm" name="ui" placeholder="password1" />
+        <button type="submit">submit </button>
+    </form>
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,93 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: "Montserrat";
+    }
+    
+    a:hover {
+        background: #8D60DE;
+        color: #fff;
+    }
+    
+    section {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(#61419B, #D4C7EC);
+    }
+    
+    .container {
+        max-width: 400px;
+        width: 90%;
+        padding: 20px;
+        box-shadow: 0px 0px 20px #00000020;
+        border-radius: 8px;
+        background-color: rgb(0, 0, 0);
+        animation: btn-anim3 1s linear infinite;
+        animation-delay: .5s
+    }
+    
+    .step {
+        display: none;
+    }
+    
+    .step.active {
+        display: block;
+    }
+    
+    .form-group {
+        width: 100%;
+        margin-top: 20px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .form-group input {
+        width: 100%;
+        border: 1.5px solid rgba(128, 128, 128, 0.418);
+        padding: 5px;
+        font-size: 18px;
+        margin-top: 5px;
+        border-radius: 4px;
+    }
+    
+    button.next-btn,
+    button.previous-btn,
+    button.submit-btn {
+        float: right;
+        margin-top: 20px;
+        padding: 10px 30px;
+        border: none;
+        outline: none;
+        background-color: rgb(0, 0, 0);
+        font-family: "Montserrat";
+        font-size: 18px;
+        color: #8D60DE;
+        cursor: pointer;
+        /* text-align: right; */
+    }
+    
+    button.next-btn:hover,
+    button.previous-btn:hover,
+    button.submit-btn:hover {
+        background: #8D60DE;
+        color: #fff;
+        border-radius: 4px;
+        box-shadow: 0 0 5px #8D60DE, 0 0 25px #8D60DE, 0 0 50px #8D60DE, 0 0 100px #8D60DE;
+    }
+    
+    button.previous-btn {
+        float: left;
+        color: #8D60DE;
+        background-color: #000000;
+    }
+    
+    button.submit-btn {
+        color: #8D60DE;
+        background-color: #000000;
+    }

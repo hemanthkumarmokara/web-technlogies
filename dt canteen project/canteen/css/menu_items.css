@@ -1,0 +1,127 @@
+
+.item_img1, .item_img2, .item_img3, .item_img4, .item_img5 {
+    height: 70px;
+    width: 70px;
+    background-image: url("/images/Menu_items/Snacks/dhokla.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .item_img2 {
+    background-image: url("/images/Menu_items/Snacks/kidney_bean_burger.jpg");
+  }
+  .item_img3 {
+    background-image: url("/images/Menu_items/Snacks/mysore_bonda.jpg");
+  }
+  
+  .item_img4 {
+    background-image: url("/images/Menu_items/Snacks/onion_pakoda.jpg");
+  }
+  .item_img5 {
+    background-image: url("/images/Menu_items/Snacks/pakodas.jpg");
+  }
+
+  .menu_section {
+    
+    height: 100vh;
+  }
+
+  .menu__card-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    padding-top: 10rem;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+      135deg,
+      rgba(4, 56, 42, 0.703),
+      rgba(31, 64, 55, 0.716),
+      rgba(34, 62, 53, 0.77)
+    ),
+    url("/images/lily-banse--YHSwy6uqvk-unsplash.jpg");
+  }
+  
+
+  .menu__card {
+    height: 100%;
+    width: max-content;
+    /* border: 1px solid red; */
+    padding: 1rem;
+    background: rgba(201, 203, 201, 0.661);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(19.5px);
+  -webkit-backdrop-filter: blur(19.5px);
+  border-radius: 10px;
+  text-transform: uppercase;
+  }
+  
+  .menu__card--item {
+    width: 400px;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 2px solid rgb(136, 132, 132);
+  }
+  
+
+.item_det_container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}  
+
+.get_item--btn {
+    background-color: var(--color_primary);
+    border: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: .6rem 1rem;
+    border-radius: 15px;
+    color: #fff;
+    margin-top: 15px;
+    /* margin-right: 10px; */
+    cursor: pointer;
+    transition: all .2s ease;
+
+}
+
+
+.get_item--btn:hover {
+    box-shadow: 3px 3px 5px rgba(95, 94, 94, 0.571);
+}
+
+.card_heading {
+    color: #fff;
+    /* text-transform: uppercase; */
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.item_purch_container {
+    text-align: center;
+}
+
+.menu_section--heading {
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    color: #fff;
+    font-family: "Libre Bodoni", serif;
+    font-size: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(15.5px);
+    -webkit-backdrop-filter: blur(15.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+  padding: .8rem 4rem;
+  margin-bottom: 2rem;
+}

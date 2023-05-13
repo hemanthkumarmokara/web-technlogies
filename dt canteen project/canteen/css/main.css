@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "./homePage.css";
+@import "./animations.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+::selection {
+    color: #fff;
+    background-color: var(--color_primary);
+  }
+
+:root {
+    --color_primary--light: #22c55e;
+    --color_primary: #15803d;
+    --color_primary--dark: #14532d;
+
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  /* padding: 1.5rem; */
+}
+  
+.section {
+  height: 100vh;
+}

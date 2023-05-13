@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <style>
+        .navv {
+            background-image: linear-gradient(to right, rgb(77, 106, 235), rgb(75, 64, 64));
+            padding: 25px;
+            border: 2px;
+            border-color: brown;
+            border-radius: 8px;
+        }
+        
+        .lol {
+            color: brown;
+            text-align: center;
+            margin: 1px 1px 1px 60px;
+            padding: 15px;
+            border: 11px;
+            border-radius: 11px;
+            background-color: rgb(220, 239, 245);
+            text-transform: capitalize;
+            text-decoration-line: none;
+        }
+        
+        .university {
+            margin: 0px, 100px, 0px, 0px;
+            font-size: 220%;
+            color: rgb(244, 248, 14);
+        }
+        
+        .navv .lol:hover {
+            background-color: rgb(215, 215, 250);
+            color: black;
+        }
+        
+        body {
+            background-color: rgb(220, 239, 245);
+        }
+        
+        .social {
+            display: inline-block;
+            margin: 0 8px
+        }
+        
+        .icons {
+            text-align: center;
+            padding: 5px;
+        }
+        
+        .mainn {
+            background-image: linear-gradient(to right, rgb(77, 106, 235), rgb(75, 64, 64));
+            padding: 3px;
+            border: 4px;
+            border-radius: 9px;
+        }
+        
+        .copyright {
+            color: azure;
+            text-align: center;
+        }
+        
+        .copyright a {
+            color: azure;
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <script>
+        function updateContent() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                document.getElementById("hero2").innerHTML = "dat__itle";
+
+            };
+            xhttp.open("GET", "data.json", true);
+            xhttp.send();
+        }
+    </script>
+    <header>
+        <nav class="navv">
+            <a class="university">University web page</a>
+
+            <a href="home.html" class="lol" target="_blank">Home</a>
+            <a href="department.html" class="lol" target="_blank">Departments</a>
+            <a href="student.html" class="lol" target="_blank">Students</a>
+            <a href="Facilities.html" class="lol" target="_blank">Facilities</a>
+            <a href="contact.html" class="lol" target="_blank">Contact</a>
+
+        </nav>
+    </header><br><br><br><br>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to the VIT-AP University</h2>
+            <p class="hero2">At VIT-AP, all programmes have been carefully crafted for a holistic development of the students. The curriculum is designed to build strong fundamental concepts in tandem with applications based on industry requirements. The emphasis is on
+                autonomous learning with a balanced mix of co- and extra-curricular activities enabling students to chart their own course. This is achieved through a Fully Flexible Credit System (FFCSTM) in which students can select courses, faculty,
+                timings, venue and design a personalized time-table in each semester, to suit their interests and aspirations.</p>
+
+        </section>
+        <button id="update-button" onclick="updateContent()">Update Content</button>
+
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+
+                <img src="https://vitap.ac.in/wp-content/gallery/Vitopia2018/thumbs/thumbs_IMG_6066.jpg" alt="Event 1">
+                <h3>VITOPIA 1</h3>
+                <p>Apart from academics, students are involved in a culture of experiencing life through various events on campus. They get to participate in popular weekly student community programmes, be a part of the music band or the dance troupe, or
+                    any other that interests them. Moreover, every year the institute has a mega cultural and technical event that includes popular celebrities and accomplished people from various fields wherein students are also provided a platform to
+                    showcase and develop their skills and talents.</p>
+
+
+                <img src="https://vitap.ac.in/wp-content/gallery/university-day-celebrations-2020/thumbs/thumbs_UD18.jpg" alt="Event 2">
+                <h3>UNIVERSITY DAY</h3>
+                <p>Apart from academics, students are involved in a culture of experiencing life through various events on campus. They get to participate in popular weekly student community programmes, be a part of the music band or the dance troupe, or
+                    any other that interests them. Moreover, every year the institute has a mega cultural and technical event that includes popular celebrities and accomplished people from various fields wherein students are also provided a platform to
+                    showcase and develop their skills and talents.</p>
+
+
+                <img src="https://vitap.ac.in/wp-content/gallery/2nd-annual-convocation-2022/thumbs/thumbs_C15.jpg" alt="Event 3">
+                <h3>CONVOCATION DAY</h3>
+                <p>Apart from academics, students are involved in a culture of experiencing life through various events on campus. They get to participate in popular weekly student community programmes, be a part of the music band or the dance troupe, or
+                    any other that interests them. Moreover, every year the institute has a mega cultural and technical event that includes popular celebrities and accomplished people from various fields wherein students are also provided a platform to
+                    showcase and develop their skills and talents.</p>
+
+                <img src="https://vitap.ac.in/wp-content/gallery/independence-day-celebrations-2020/thumbs/thumbs_KKK_1915.jpg" alt="Event 3">
+                <h3>CONVOCATION DAY</h3>
+                <p>Apart from academics, students are involved in a culture of experiencing life through various events on campus. They get to participate in popular weekly student community programmes, be a part of the music band or the dance troupe, or
+                    any other that interests them. Moreover, every year the institute has a mega cultural and technical event that includes popular celebrities and accomplished people from various fields wherein students are also provided a platform to
+                    showcase and develop their skills and talents.</p>
+
+            </ul>
+        </section>
+    </main>
+    <br><br>
+
+    <footer>
+        <div class="mainn">
+            <div class="copyright">
+                <p>&copy; 2023 VIT-AP University</p><br>
+            </div>
+            <div class="icons">
+                <div class="social">
+                    <a href="https://www.facebook.com/vitap.university/"><img src="https://img.icons8.com/doodle/1x/facebook-new.png" alt="err"></a>
+                </div>
+                <div class="social">
+                    <a href="https://www.instagram.com/vitap.university/"><img src="https://img.icons8.com/color/1x/instagram-new.png" alt="err"></a>
+                </div>
+                <div class="social">
+
+                    <a href="https://twitter.com/VITAPuniversity"><img src="https://img.icons8.com/color/1x/twitter.png" alt="err"></a>
+                </div>
+                <div class="social">
+                    <a href="mailto:info@vitap.ac.in"><img src="https://img.icons8.com/office/1x/mail-contact.png" alt="err"></a><br>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
