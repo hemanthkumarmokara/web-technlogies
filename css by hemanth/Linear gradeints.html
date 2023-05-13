@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <style>
+        .hh2 {
+            border: 2px;
+            border-radius: 7px;
+            padding: 8px;
+            color: aliceblue;
+            background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+        }
+        
+        .flag {
+            padding: 20px;
+            border: 2px;
+            border-radius: 8px;
+            0
+        }
+        
+        #grad1 {
+            height: 55px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        }
+        
+        #grad2 {
+            height: 150px;
+            width: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+        }
+        
+        #grad3 {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: conic-gradient(red, yellow, green, blue, black);
+        }
+        
+        #grad4 {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+            border-radius: 50%;
+        }
+        
+        #grad5 {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: conic-gradient(at 60% 45%, red, yellow, green);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        If you want more control over the direction of the gradient, you can define an angle, instead of the predefined directions (to bottom, to top, to right, to left, to bottom right, etc.).
+         A value of 0deg is equivalent to "to top".
+         A value of 90deg is equivalent to "to right". A value of 180deg is equivalent to "to bottom".
+    -->
+
+    <h1 class="flag">hello</h1>
+    <br><br>
+
+    <h2 class="hh2">this is for knowing linear gradeint</h2>
+    <br><br>
+    <div id="grad1" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold">
+
+    </div>
+    <br><br>
+    <h1>repeating radial gradient</h1>
+    <div id="grad2"></div>
+    <hr><br><br>
+
+    <h1>Conic Gradient - Five Colors</h1>
+
+    <div id="grad3"></div>
+    <hr><br><br>
+    <h1>Conic Gradient - Pie Chart</h1>
+
+    <div id="grad4"></div>
+    <hr><br><br>
+
+    <h1>Conic Gradient - With a specified center position</h1>
+
+    <div id="grad5"></div>
+
+
+</body>
+
+</html>
